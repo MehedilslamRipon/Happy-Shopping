@@ -1,0 +1,36 @@
+.single-product-container {
+   display: flex;
+   padding: 20px 50px;
+}
+
+.single-product-container .product-info .product-name {
+   color: #9b59b6;
+}
+
+.single-product-container .img-area {
+   width: 30%;
+}
+
+.single-product-container .product-info {
+   width: 70%;
+}
+
+.single-product-container .product-info .product-name,
+.seller-name,
+.price,
+.stock {
+   margin-bottom: 15px;
+}
+
+.single-product-container .product-info .btn {
+   font-size: 17px;
+   padding: 6px 50px;
+   background: #f4bd43;
+   border-radius: 5px;
+   cursor: grab;
+}
+
+.single-product-container .product-info .btn .cart-icon img {
+   height: 15px;
+   width: 25px;
+}
