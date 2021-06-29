@@ -1,11 +1,15 @@
 // dependencies
 import React from 'react';
 import './Cart.css';
+import './../Product/Product.css';
 
 const Cart = (props) => {
    const cart = props.cart;
    // console.log(cart);
-   const total = cart.reduce((total, product) => total + product.price, 0);
+   const total = cart.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+   );
 
    let shipping = 0;
    if (total > 35) {
@@ -32,6 +36,10 @@ const Cart = (props) => {
          <p>
             <b>Total Price: ${grandTotal}</b>
          </p>
+         <br />
+         {
+            props.children
+         }
       </div>
    );
 };
