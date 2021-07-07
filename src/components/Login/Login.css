@@ -1,0 +1,26 @@
+.login-container {
+   text-align: center;
+   padding: 100px;
+}
+
+.signIn-signUp-btn {
+   padding: 10px 50px;
+   margin-bottom: 20px;
+   border: none;
+   border-radius: 5px;
+   background: #FF9800;
+}
+
+.field-box {
+   padding: 6px 100px;
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+.submit-btn {
+   padding: 10px 50px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 5px;
+   background: #FF9800;
+}
