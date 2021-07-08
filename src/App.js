@@ -7,9 +7,9 @@ import NotFound from './components/NotFound/NotFound';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/Login/Login';
-import Shipment from './components/Shipment/Shipment';
 import { createContext, useState } from 'react';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Shipment from './components/Shipment/Shipment';
 
 export const UserContext = createContext();
 
@@ -21,7 +21,6 @@ function App(props) {
          value={[loggedInUser, setLoggedInUser]}
          className="App"
       >
-         <h3>Email: {loggedInUser.email} </h3>
          <Router>
             <Header></Header>
 
